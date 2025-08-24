@@ -1,5 +1,17 @@
 # Type Safety
 
+## Table of Contents
+1. [Variable Size](#variable-size)
+    - [Static Size](#static-size)
+    - [Dynamic Size](#dynamic-size)
+    - [Assignment Rules](#assignment-rules)
+2. [Data Type](#data-type)
+    - [Data Types](#data-types)
+    - [Type of Declare Statement](#type-of-declare-statement)
+    - [Type naming](#type-naming)
+3. [Built-in Data Types](#built-in-data-types)
+4. [Type Conversion](#type-conversion)
+
 # Concept
 Quark enforces **static typing** and has specific rules for type assignments, particularly regarding **variable sizes** and the **data types**.
 1. ## Variable Size
