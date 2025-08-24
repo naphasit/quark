@@ -15,7 +15,7 @@
 # Concept
 Quark enforces **static typing** and has specific rules for type assignments, particularly regarding **variable sizes** and the **data types**.
 1. ## Variable Size
-    - Every variable in Quark must **specify its size**. Variables can be either static size or dynamic size, with different assignment rules.
+    - **Every variable** in Quark **must specify its size**. Variables can be either static size or dynamic size, with different assignment rules.
     - ### Static Size
        - The size of the variable is **fixed at compile time**.
        - Store data on the **stack**.
@@ -23,13 +23,13 @@ Quark enforces **static typing** and has specific rules for type assignments, pa
        - The size of the variable **can change at runtime**.
        - Store data on the **heap**.
     - ### Assignment Rules
-        - Static → Static (same size & type) => Allowed.
-        - Static → Static (different size) => Not Allowed.
-        - Static → Dynamic => Allowed.
-        - Dynamic → Static => Not Allowed.
+        - **Static** → **Static** (same size & type) => **Allowed**.
+        - **Static** → **Static** (different size) => **Not Allowed**.
+        - **Static** → **Dynamic** => **Allowed**.
+        - **Dynamic** → **Static** => **Not Allowed**.
 2. ## Data Types
     - ## Type Declaration
-       - Every variable must specify its type.
+       - **Every variable must specify its type**.
     - ## Type of Declare Statement 
        - Alias: **alternative name** for an **existing type** (just a synonym).
        - Enum: a set of **named constant values**.
@@ -40,7 +40,7 @@ Quark enforces **static typing** and has specific rules for type assignments, pa
        - Examples: `MyString`, `Foods`, `SpiderType`, `Result<T>`.
 3. ## Built-in Data Types
     - `Bool`: Boolean(`true` or `false`)
-    - `Char`: Unicode Character (Single Character)
+    - `Char`: Unicode Character (**Single Character**)
     - `U8`: 8-Bits of Unsigned Integer
     - `U16`: 16-Bits of Unsigned Integer
     - `U32`: 32-Bits of Unsigned Integer
@@ -52,11 +52,11 @@ Quark enforces **static typing** and has specific rules for type assignments, pa
     - `I64`: 64-Bits of Signed Integer
     - `I128`: 128-Bits of Signed Integer
     - `Array<T>`: Array of `T`.
-    - `String`: Alias for `Array<Char>` (dynamic).
+    - `String`: Alias for `Array<Char>` (**dynamic**).
     - `Maybe<T>`: Nullable type (`Valid<T>` or `Invalid`).
     - `Result<T, E>`: Error-handling type (`Success<T>` or `Failure<E>`).
 4. ## Type Conversion
-    - Widening conversion (safe) => Allowed
+    - Widening conversion (**safe**) => **Allowed**
        - Example: `U32` → `U64`
-    - Narrowing conversion (unsafe) => Not Allowed
+    - Narrowing conversion (**unsafe**) => **Not Allowed**
        - Example: `U64` → `U32`
