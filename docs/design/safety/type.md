@@ -29,7 +29,7 @@ Quark enforces **static typing** and has specific rules for type assignments, pa
         - **Dynamic** → **Static** => **Not Allowed**.
 2. ## Data Types
     - ## Type Declaration
-       - **Every variable must specify its type**.
+       - **Every variable must specify its type**, unless type inference is used.
     - ## Type of Declare Statement 
        - Alias: **alternative name** for an **existing type** (just a synonym).
        - Enum: a set of **named constant values**.
