@@ -43,3 +43,8 @@ Quark enforces **static typing** and has specific rules for type assignments, pa
     - `String`: Alias for `Array<Char>` (dynamic).
     - `Maybe<T>`: Nullable type (`Valid<T>` or `Invalid`).
     - `Result<T, E>`: Error-handling type (`Success<T>` or `Failure<E>`).
+4. ## Type Conversion
+    - Widening conversion (safe) => Allowed
+       - Example: `U32` → `U64`
+    - Narrowing conversion (unsafe) => Not Allowed
+       - Example: `U64` → `U32`
